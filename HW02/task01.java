@@ -15,13 +15,13 @@ public class task01 {
             number = sc.next();
             try {
                 Float.parseFloat(number);
-            } catch (NumberFormatException e) {
+            } 
+            catch (NumberFormatException e) {
                 System.out.println("Повторите ввод (число с дробной частью, разделитель точка)");
                 number = null;
             }
         }
         sc.close();
         return Float.parseFloat(number);
-        
     }
 }
